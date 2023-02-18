@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+
+:root {
+    --body-font: 'Questrial', sans-serif;
+
+    --primar-color: #202d57;
+    --secondary-color: #1567a3;
+}
+
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+
+
+
+/* navbar css starts */
+.navbar{
+    padding: 25px 0px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+.navbar .navbar-brand img{
+    width: 200px;
+}
+.navbar .nav-link{
+    font-family: var(--body-font);
+    font-size: 18px;
+    margin-right: 15px;
+    color: var(--primar-color);
+}
+.navbar .nav-link.active{
+    color: var(--secondary-color);
+}
+/* navbar css end */
