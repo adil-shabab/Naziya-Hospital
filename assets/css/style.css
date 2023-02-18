@@ -55,6 +55,7 @@ body{
     padding: 35px 0px 0px 0px;
     background: rgba(231, 231, 231, 0.164);
     position: relative;
+    border-bottom: 1px solid #d6d6d66b;
     overflow: hidden;
 }
 .hero_section::before{
@@ -139,3 +140,66 @@ body{
     font-size: 41px;
     margin-right: 16px;
 }
+/* hero section css end  */
+
+
+
+
+
+
+/* department section css start  */
+.department_section{
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+.department_section .heading{
+    font-size: 35px;
+    width: 45%;
+    text-align: center;
+    margin: auto;
+}
+.department_section .box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 0px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.department_section .box::after{
+    content: '';
+    width: 80px;
+    height: 80px;
+    background-color: #a0a2a81a;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-bottom-right-radius: 100%;
+    border-top-left-radius: 10px;
+}
+.department_section .box::before{
+    content: '';
+    width: 80px;
+    height: 80px;
+    background-repeat: no-repeat;
+    background: url('../img/icons/heart-beat.png');
+    position: absolute;
+    background-size: cover;
+    bottom: -22px;
+    right: -18px;
+    transform: rotate(320deg);
+    opacity: 0.05;
+}
+.department_section .box img{
+    width: 65px;
+    margin-bottom: 20px;
+}
+.department_section .box .head_txt{
+    color: var(--secondary-color);
+    font-size: 20px;
+    font-weight: 600;
+}
+/* department section css end  */
