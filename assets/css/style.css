@@ -146,6 +146,275 @@ body{
 
 
 
+/* home page about section css start  */
+.about_section{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.about_section .left_box{
+    position: relative;
+}
+.about_section .left_box .scrubble{
+    position: absolute;
+    width: 60px;
+    right: 10%;
+    bottom: 7%;
+    transform: rotate(280deg);
+}
+.about_section .left_box span{
+    text-transform: uppercase;
+    color: #1567a3;
+    font-size: 17px;
+}
+.about_section .left_box .head_txt{
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-top: 8px;
+}
+.about_section .left_box .head_txt span{
+    font-size: 40px;
+    text-transform: capitalize;
+}
+.about_section .left_box ul{
+    padding: 0px;
+    margin-bottom: 32px;
+}
+.about_section .left_box ul li{
+    padding-left: 30px;
+    margin-bottom: 4px;
+    position: relative;
+}
+.about_section .left_box ul li::before{
+    content: '';
+    background: url('../img/icons/tick.png');
+    background-position: center;
+    background-size: contain;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: 0px;
+}
+.about_section .left_box a.b_t_n{
+    text-decoration: none;
+    color: black;
+    position: relative;
+    font-size: 18px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgb(178, 178, 178);
+}
+.about_section .left_box a::after{
+    content: '';
+    width: 20px;
+    height: 20px;
+    margin-top: 4px;
+    background: url('../img/icons/right-arrow.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    transition: 0.4s;
+    right: -35px;
+}
+.about_section .left_box a:hover::after{
+    right: -50px;
+}
+/* home page about section css start  */
+
+
+
+
+
+
+/* department section css start  */
+.department__section{
+    margin-bottom: 80px;
+    padding: 40px 0px;
+}
+.department__section .row{
+    margin-top: 30px;
+}
+.department__section .span{
+    font-size: 20px;
+    text-align: center;
+    display: block;
+}
+.department__section .heading{
+    font-size: 35px;
+    text-align: center;
+    margin-top: 2px;
+    font-weight: bold;
+}
+.department__section .description{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+.department__section .dep_carousel{
+    margin-top: 25px;
+}
+.department__section .box{
+    border: 1px solid rgb(238, 238, 238);
+    padding: 15px 15px 35px;
+    border-radius: 8px;
+    margin: 10px;
+}
+.department__section .box .img_box{
+    height: 210px;
+}
+.department__section .box .img_box img{
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+.department__section .box h5{
+    font-size: 24px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+.department__section .box a{
+    text-decoration: none;
+    color: black;
+    position: relative;
+    font-size: 16px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgb(178, 178, 178);
+}
+.department__section .box a::after{
+    content: '';
+    width: 20px;
+    height: 20px;
+    margin-top: 4px;
+    background: url('../img/icons/right-arrow.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    transition: 0.4s;
+    right: -35px;
+}
+.department__section .row .box a:hover::after{
+    right: -50px;
+}
+.slick-dots{
+    bottom: -30px;
+}
+.slick-dots li.slick-active{
+    background: #1567a3;
+    width: 33px;
+    height: 9px;
+    border-radius: 20px;
+}
+.slick-dots li{
+    background: #1567a3;
+    width: 9px;
+    height: 9px;
+    border-radius: 20px;
+    transition: 0.4s;
+}
+.slick-dots li button{
+    display: none;
+}
+/* department section css end */
+
+
+
+
+
+
+.counter_section{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.counter_section .heading{
+    font-size: 35px;
+    font-weight: bold;
+    width: 40%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 35px;
+}
+.counter_section .row{
+    padding: 25px 200px;
+}
+.counter_section .row .box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 25px 0px;
+    border-radius: 10px;
+}
+.counter_section .row .box h5{
+    font-size: 35px;
+    font-weight: bold;
+}
+.counter_section .row .box h6{
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 12px;
+}
+.counter_section .row .box_1{
+    background-color: #f3c7d2;
+}
+.counter_section .row .box_2{
+    background-color: #d2dee3;
+}
+.counter_section .row .box_3{
+    background-color: #e8dbdb;
+}
+/* counter section css end  */
+
+
+
+
+
+/* news letter section css start  */
+.news_letter{
+    margin-top: 100px;
+    margin-bottom: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    background: url('../img/news-letter/bg.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.news_letter .heading{
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+.news_letter p{
+    color: white;
+    text-align: center;
+    margin-bottom: 35px;
+}
+.news_letter .input_box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.news_letter .input_box input{
+    padding: 9px 15px;
+    width: 250px;
+    border: none;
+    outline: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.news_letter .input_box button{
+    background: #2b4c52ba;
+    color: white;
+    border: none;
+    outline: none;
+    padding: 9px 23px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+/* news letter section css end */
+
 
 /* department section css start  */
 .department_section{
@@ -203,3 +472,9 @@ body{
     font-weight: 600;
 }
 /* department section css end  */
+
+
+
+
+
+
