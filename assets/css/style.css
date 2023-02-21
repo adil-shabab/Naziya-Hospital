@@ -367,10 +367,99 @@ body{
 
 
 
+
+
+
+/* checkup section css start */
+.checkup_section{
+    margin-top: 100px;
+    padding: 0px 0px 120px;
+    position: relative;
+}
+.checkup_section::after{
+    content: '';
+    width: 250px;
+    height: 250px;
+    background: #bed9ec4f;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    border-top-left-radius: 100%;
+}
+.checkup_section::before{
+    content: '';
+    width: 350px;
+    height: 350px;
+    background: #afbeee4d;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    border-top-left-radius: 100%;
+}
+.checkup_section .span{
+    background: #D3E9FB;
+    padding: 7px 12px;
+    color: #1567a3;
+}
+.checkup_section .heading{
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    width: 70%;
+}
+.checkup_section .inner_box{
+    padding-left: 40px;
+    margin-bottom: 30px;
+    position: relative;
+}
+.checkup_section .inner_box h5{
+    font-size: 18px;
+    font-weight: bold;
+}
+.checkup_section .inner_box::before{
+    content: '';
+    background: url('../img/icons/check-mark.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+.checkup_section a.b_t_n{
+    text-decoration: none;
+    color: black;
+    position: relative;
+    font-size: 18px;
+    display: block;
+    width: fit-content;
+    margin-top: 40px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgb(178, 178, 178);
+}
+.checkup_section a.b_t_n::after{
+    content: '';
+    width: 20px;
+    height: 20px;
+    margin-top: 4px;
+    background: url('../img/icons/right-arrow.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    transition: 0.4s;
+    right: -35px;
+}
+.checkup_section a.b_t_n:hover::after{
+    right: -50px;
+}
+/* checkup section css end  */
+
+
 /* news letter section css start  */
 .news_letter{
-    margin-top: 100px;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -414,6 +503,18 @@ body{
     border-bottom-right-radius: 10px;
 }
 /* news letter section css end */
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* department section css start  */
