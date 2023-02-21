@@ -1,4 +1,6 @@
-$('.dep_carousel').slick({
+// department carousel 
+if(document.querySelector('.dep_carousel') !== null){
+  $('.dep_carousel').slick({
     margin:10,
     dots: true,
     infinite: true,
@@ -33,8 +35,14 @@ $('.dep_carousel').slick({
         }
       ]
   });
+}
 
-$('.doctor_carousel').slick({
+
+
+
+// home page doctor carousel 
+if(document.querySelector('.doctor_carousel') !== null){
+  $('.doctor_carousel').slick({
     dots: true,
     infinite: true,
     // autoplay:true,
@@ -68,3 +76,4 @@ $('.doctor_carousel').slick({
         }
       ]
   });
+}
