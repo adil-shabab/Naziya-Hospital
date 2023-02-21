@@ -365,10 +365,52 @@ body{
 
 
 
-
-
-
-
+.doctors_section{
+    margin-top: 80px;
+    margin-bottom: 140px;
+}
+.doctors_section h3.heading{
+    font-size: 35px;
+    font-weight: bold;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.doctors_section p.description{
+    width: 45%;
+    margin: auto;
+    text-align: center;
+}
+.doctors_section .box{
+    background: #d2dee36e;
+    border-radius: 30px;
+    margin: 10px;
+}
+.doctors_section .box .img_box {
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.doctors_section .box .img_box img{
+    object-fit: cover;
+    height: 100%;
+}
+.doctors_section .box .inner_box{
+    background: #ffffff4d;
+    text-align: center;
+    padding: 15px 0px;
+}
+.doctors_section .box .inner_box h5.name{
+    margin-bottom: 0px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #14457b;
+}
+.doctors_section .box .inner_box p{
+    margin-bottom: 0px !important;
+}
 
 /* checkup section css start */
 .checkup_section{
@@ -457,6 +499,10 @@ body{
 /* checkup section css end  */
 
 
+
+
+
+
 /* news letter section css start  */
 .news_letter{
     margin-bottom: 0px;
@@ -466,7 +512,7 @@ body{
     align-items: center;
     height: 50vh;
     background: url('../img/news-letter/bg.png');
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 .news_letter .heading{
@@ -494,7 +540,7 @@ body{
     border-bottom-left-radius: 10px;
 }
 .news_letter .input_box button{
-    background: #2b4c52ba;
+    background: #285e68b5;
     color: white;
     border: none;
     outline: none;
@@ -508,6 +554,122 @@ body{
 
 
 
+
+/* footer section css starts  */
+.footer_section{
+    background: #14457b;
+    padding: 100px 0px 0px;
+    color: white;
+}
+.footer_section .copy_right{
+    margin-bottom: 0px;
+    padding: 15px 0px;
+    font-size: 17px;
+}
+.footer_section .container{
+    padding-bottom: 25px;
+    border-bottom: 1px solid gray;
+}
+.footer_section  h5.head_txt{
+    font-size: 27px;
+    margin-bottom: 35px;
+}
+.footer_section .logo_section img{
+    width: 80%;
+    margin-bottom: 40px;
+}
+.footer_section .logo_section .icons{
+    margin-top: 25px;
+}
+.footer_section .logo_section .icons i{
+    font-size: 20px;
+    background: rgba(255, 255, 255, 0.079);
+    padding: 12px;
+    margin-right: 15px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.footer_section .quick_link ul{
+    padding: 0px;
+}
+.footer_section .quick_link ul:nth-child(1){
+    margin-right: 40px;
+}
+.footer_section .quick_link ul li{
+    padding-left: 32px;
+    position: relative;
+    margin-bottom: 15px;
+}
+.footer_section .quick_link ul li::before{
+    content: '';
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    background-size: contain !important;
+    background-repeat: no-repeat;
+    background: url('../img/icons/next.png');
+    position: absolute;
+    left: 0px;
+    top: 4px;
+}
+.footer_section .quick_link ul li a{
+    color: white;
+}
+.footer_section .latest_news .box{
+    display: flex;
+    border-bottom: 1px solid rgb(166, 166, 166);
+    padding-bottom: 15px;
+}
+.footer_section .latest_news .box:last-child{
+    border-bottom: none;
+    margin-top: 20px;
+}
+.footer_section .latest_news .box .txt_box{
+    margin-left: 15px;
+}
+.footer_section .latest_news .box .txt_box h6.head{
+    font-size: 18px;
+    margin-top: 10px;
+    width: 90%;
+}
+.footer_section .latest_news .box .txt_box span.date{
+    font-size: 14px;
+}
+.footer_section .contact .box{
+    margin-bottom: 22px;
+}
+.footer_section .contact .box p.phone::before{
+    content: "\f095";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+}
+.footer_section .contact .box p.email::before{
+    content: "\f0e0";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+}
+.footer_section .contact .box p.location::before{
+    content: "\f601";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+}
+.footer_section .contact .box p{
+    margin-bottom: 0px;
+    position: relative;
+    padding-left: 30px;
+}
+.footer_section .contact .box p i{
+    margin-right: 15px;
+}
+/* footer section css ends */
 
 
 
