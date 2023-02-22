@@ -802,4 +802,37 @@ body{
     object-fit: cover;
     border-radius: 25px;
 }
+
+
+
+.about_page .counter__section .row{
+    padding: 25px 200px;
+}
+.about_page .counter__section{
+    margin-top: 15px;
+}
+.about_page .counter__section .box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0px;
+    flex-direction: column;
+    border-radius: 25px;
+}
+.about_page .counter__section .first_box{
+    background-color: #f5dfdf;   
+}
+.about_page .counter__section .second_box{
+    background-color: #ffe7d1;
+}
+.about_page .counter__section .third_box{
+    background-color: #d4d4f5;
+}
+.about_page .counter__section .box .head{
+    font-size: 50px;
+    font-weight: bold;
+}
+.about_page .counter__section .box .desc{
+    font-size: 18px;
+}
 /* ================================================== About Page css ends =============================================================== */
