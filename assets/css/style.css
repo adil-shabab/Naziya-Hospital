@@ -692,6 +692,26 @@ body{
 
 /* ================================================== About Page css starts =============================================================== */
 .about_banner{
-
+    padding: 60px 0px 20px;
+    position: relative;
+}
+.about_banner .heading{
+    font-size: 35px;
+    font-weight: bold;
+    width: 50%;
+    line-height: 45px;
+    margin-bottom: 10px;
+}
+.about_banner_img_section{
+    height: 57vh;
+}
+.about_banner_img_section .container{
+    height: 100%;
+}
+.about_banner_img_section .container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px;
 }
 /* ================================================== About Page css ends =============================================================== */
