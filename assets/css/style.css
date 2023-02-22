@@ -692,15 +692,103 @@ body{
 
 /* ================================================== About Page css starts =============================================================== */
 .about_banner{
-    padding: 60px 0px 20px;
+    padding: 120px 0px;
+    background: url('../img/about/breadcamb.jpg');
+    background-position: center;
+    background-size: cover;
     position: relative;
 }
-.about_banner .heading{
+.about_banner::after{
+    content: '';
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    background-color: #1567a38a;
+    z-index: 1;
+}
+.about_banner .head_txt{
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    position: relative;
+    z-index: 2;
+}
+.about_banner .breadcramb{
+    font-size: 20px;
+    position: relative;
+    z-index: 2;
+    color: white;
+}
+.about_banner .breadcramb a{
+    color: white;
+    font-size: 20px;
+}
+
+
+.about_page .about_content{
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.about_page .about_content span{
+    font-size: 18px;
+}
+.about_page .about_content .head_txt{
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 8;
+    margin-bottom: 10px;
+    color: #14457b;
+}
+.about_page .about_content p.description{
+    margin-bottom: 20px;
+}
+.about_page .about_content .box{
+    padding-left: 40px;
+    position: relative;
+}
+.about_page .about_content .box h5{
+    font-size: 20px;
+    font-weight: bold;
+    color: #14457b;
+}
+.about_page .about_content .box::before{
+    content: '';
+    background: url('../img/icons/check-mark.png');
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    position: absolute;
+    background-size: contain;
+    left: 0px;
+    top: 0px;
+}
+
+
+.about_subhead{
+    padding: 0px 0px 20px;
+    position: relative;
+}
+.about_subhead .heading{
     font-size: 35px;
     font-weight: bold;
     width: 50%;
     line-height: 45px;
     margin-bottom: 10px;
+    position: relative;
+}
+.about_subhead .heading::after{
+    content: '';
+    background: url('../img/icons/hospital.png');
+    background-position: center;
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    margin-left: 15px;
+    margin-top: 8px;
 }
 .about_banner_img_section{
     height: 57vh;
