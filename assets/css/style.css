@@ -862,4 +862,125 @@ body{
     font-size: 25px;
     font-weight: bold;
 }
+
+
+
+.about_page .banner__box{
+    margin-bottom: 80px;
+}
+.about_page .banner__box .box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #dad7ff;
+    background-repeat: no-repeat;
+    padding: 30px;
+    border-radius: 15px;
+}
+.about_page .banner__box .box img{
+    width: 250px;
+}
+.about_page .banner__box .box .txt_box h4{
+    font-size: 26px;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+.about_page .banner__box .box .txt_box span{
+    font-size: 18px;
+}
+.about_page .banner__box .box .txt_box a{
+    text-decoration: none;
+    color: black;
+    position: relative;
+    font-size: 16px;
+    padding-bottom: 8px;
+    font-weight: bold;
+    border-bottom: 1px solid rgb(178, 178, 178);
+}
+.about_page .banner__box .box .txt_box a::after{
+    content: '';
+    width: 20px;
+    height: 20px;
+    margin-top: 4px;
+    background: url('../img/icons/right-arrow.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    transition: 0.4s;
+    right: -35px;
+}
+.about_page .banner__box .box .txt_box a:hover::after{
+    right: -50px;
+}
+
+
+
+
+.testimonial_section{
+    margin-top: 120px;
+    margin-bottom: 100px;
+}
+.testimonial_section .heading{
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+}
+.testimonial_section .testimonial_carousel{
+    margin-top: 35px;
+}
+.testimonial_section .description{
+    width: 45%;
+    text-align: center;
+    margin: auto;
+}
+.testimonial_section .box{
+    position: relative;
+    padding: 20px 15px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;  
+    border-radius: 15px;
+    margin: 12px;
+}
+.testimonial_section .box .quote{
+    position: absolute;
+    width: 70px;
+    opacity: 0.2;
+    right: 25px;
+    top: 25px;
+}
+.testimonial_section .box .top_box{
+    display: flex;
+}
+.testimonial_section .box .img_box img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.testimonial_section .box .top_box .txt_box{
+    margin-left: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.testimonial_section .box .top_box .txt_box .name{
+    margin-bottom: 0px;
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+.testimonial_section .box .top_box .txt_box .designation{
+    margin-bottom: 0px;
+    color: #0a3e63;
+}
+.testimonial_section .box .rating{
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+.testimonial_section .box .rating i{
+    margin-right: 5px;
+    color: #ff8a00;
+}
+.testimonial_section .box .review{
+    margin-bottom: 0px;
+}
 /* ================================================== About Page css ends =============================================================== */
