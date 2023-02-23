@@ -806,7 +806,7 @@ body{
 
 
 .about_page .counter__section .row{
-    padding: 25px 200px;
+    padding: 25px 200px 0px;
 }
 .about_page .counter__section{
     margin-top: 15px;
@@ -834,5 +834,32 @@ body{
 }
 .about_page .counter__section .box .desc{
     font-size: 18px;
+}
+
+
+
+
+.mission_vision{
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+.mission_vision .box{
+    background: #6197bac4;
+    border-radius: 15px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 20px;
+}
+.mission_vision .box img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 24px;
+}
+.mission_vision .box .sm_head{
+    font-size: 25px;
+    font-weight: bold;
 }
 /* ================================================== About Page css ends =============================================================== */
