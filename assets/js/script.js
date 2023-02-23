@@ -49,7 +49,7 @@ if(document.querySelector('.doctor_carousel') !== null){
     // autoplay:true,
     autoPlayTimeout:2000,
     slidesToShow: 4,
-    slidesToScroll: 1,
+    slidesToScroll: 2,
     arrows: false,
     responsive: [
         {
@@ -90,7 +90,7 @@ if(document.querySelector('.testimonial_carousel') !== null){
     autoPlayTimeout:2000,
     slidesToShow: 3,
     slidesToScroll: 2,
-    arrows: false,
+    arrows: true,
     responsive: [
         {
           breakpoint: 1024,
