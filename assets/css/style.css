@@ -1217,6 +1217,7 @@ body{
     z-index: 1;
     border-top-left-radius: 100%;
     right: -30%;
+    bottom: -30%;
 }
 .service__section .box::before{
     content: '';
@@ -1227,14 +1228,17 @@ body{
     height: 120px;
     position: absolute;
     bottom: -30%;
+    right: -30%;
     border-top-left-radius: 100%;
     right: 0px;
 }
 .service__section .box:hover::after{
     right: 0px;
+    bottom: 0px;
 }
 .service__section .box:hover::before{
     bottom: 0px;
+    right: 0px;
 }
 .service__section .box .img_box{
     height: 210px;
@@ -1273,3 +1277,57 @@ body{
     right: -50px;
 }
 /* service page css end  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* blog page css start  */
+.blog__section{
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.blog__section .box{
+    padding: 15px;
+}
+.blog__section .box .img_box{
+    width: 100%;
+    height: 250px;
+}
+.blog__section .img_box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.blog__section .txt_box span{
+    display: block;
+    margin-top: 20px;
+    padding-left: 35px;
+    position: relative;
+}
+.blog__section .txt_box .blog_head{
+    font-size: 24px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+.blog__section .txt_box .date{
+    font-size: 17px;
+    margin-top: 12px;
+}
+/* blog page css end  */
