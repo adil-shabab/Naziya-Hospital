@@ -1051,3 +1051,225 @@ body{
     margin-bottom: 0px;
 }
 /* ================================================== About Page css ends =============================================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* doctors page css start  */
+.doctors_banner{
+    padding: 120px 0px;
+    background: url('../img/doctors/bg.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.doctors_banner::after{
+    content: '';
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    background-color: #1567a38a;
+    z-index: 1;
+}
+.doctors_banner .head_txt{
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    position: relative;
+    z-index: 2;
+}
+.doctors_banner .breadcramb{
+    font-size: 20px;
+    position: relative;
+    z-index: 2;
+    color: white;
+}
+.doctors_banner .breadcramb a{
+    color: white;
+    font-size: 20px;
+}
+
+
+
+.doctors__section{
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.doctors__section .heading{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+.doctors__section .description{
+    font-size: 16px;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+}
+.doctors__section .row{
+    margin-top: 15px;
+}
+.doctors__section .box{
+    background: #d2dee36e;
+    border-radius: 10px;
+    margin-top: 25px;
+}
+.doctors__section .box .img_box {
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.doctors__section .box .img_box img{
+    object-fit: cover;
+    height: 100%;
+}
+.doctors__section .box .inner_box{
+    background: #ffffff4d;
+    text-align: center;
+    padding: 15px 0px 20px;
+}
+.doctors__section .box .inner_box h5.name{
+    margin-bottom: 0px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #14457b;
+}
+.doctors__section .box .inner_box p{
+    margin-bottom: 8px !important;
+}
+.doctors__section .box .inner_box a{
+    text-decoration: none;
+    color: black;
+    position: relative;
+    font-size: 16px;
+    padding-bottom: 8px;
+    font-weight: bold;
+    border-bottom: 1px solid rgb(178, 178, 178);
+}
+
+/* doctors page css end */
+
+
+
+
+
+
+
+
+
+
+
+
+/* service page css start  */
+
+
+.service__section{
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.service__section .heading{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+.service__section .description{
+    font-size: 16px;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+}
+.service__section .row{
+    margin-top: 30px;
+}
+.service__section .box{
+    border: 1px solid rgb(238, 238, 238);
+    padding: 15px 15px 35px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 25px;
+    position: relative;
+}
+.service__section .box::after{
+    content: '';
+    background: rgba(198, 227, 246, 0.178);
+    width: 80px;
+    border-bottom-right-radius: 8px;
+    height: 80px;
+    position: absolute;
+    transition: 0.5s;
+    bottom: 0px;
+    z-index: 1;
+    border-top-left-radius: 100%;
+    right: -30%;
+}
+.service__section .box::before{
+    content: '';
+    background: rgba(172, 206, 233, 0.159);
+    width: 120px;
+    border-bottom-right-radius: 8px;
+    transition: 0.5s;
+    height: 120px;
+    position: absolute;
+    bottom: -30%;
+    border-top-left-radius: 100%;
+    right: 0px;
+}
+.service__section .box:hover::after{
+    right: 0px;
+}
+.service__section .box:hover::before{
+    bottom: 0px;
+}
+.service__section .box .img_box{
+    height: 210px;
+}
+.service__section .box .img_box img{
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+.service__section .box h5{
+    font-size: 24px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+.service__section .box a{
+    text-decoration: none;
+    color: black;
+    position: relative;
+    font-size: 16px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgb(178, 178, 178);
+}
+.service__section .box a::after{
+    content: '';
+    width: 20px;
+    height: 20px;
+    margin-top: 4px;
+    background: url('../img/icons/right-arrow.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    transition: 0.4s;
+    right: -35px;
+}
+.service__section .row .box a:hover::after{
+    right: -50px;
+}
+/* service page css end  */
