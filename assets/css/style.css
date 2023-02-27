@@ -1397,6 +1397,7 @@ body{
 .contact__section .left_box iframe{
     width: 100%;
     height: 100%;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
 }
 .contact__section form{
     display: flex;
@@ -1445,3 +1446,31 @@ body{
     margin-bottom: 0px;
 }
 /* contact page css end */
+
+
+
+
+
+
+
+
+
+
+
+
+/* loader css start  */
+.loader{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 111;
+}
+.loader .lottie{
+    width: 250px;
+}

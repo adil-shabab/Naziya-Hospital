@@ -1,3 +1,14 @@
+// loader script 
+$(document).ready(function(){
+  setTimeout(()=> {
+      $('.loader').remove();
+  } , 800); // after 8 sec it will remove.
+});
+
+
+
+
+
 // department carousel 
 if(document.querySelector('.dep_carousel') !== null){
   $('.dep_carousel').slick({
