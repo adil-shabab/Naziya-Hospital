@@ -31,9 +31,9 @@ if(document.querySelector('.dep_carousel') !== null){
           }
         },
         {
-          breakpoint: 600,
+          breakpoint: 900,
           settings: {
-            slidesToShow: 1,
+            slidesToShow: 2,
             slidesToScroll: 1
           }
         },
@@ -73,9 +73,9 @@ if(document.querySelector('.doctor_carousel') !== null){
           }
         },
         {
-          breakpoint: 600,
+          breakpoint: 900,
           settings: {
-            slidesToShow: 1,
+            slidesToShow: 2,
             slidesToScroll: 1
           }
         },
@@ -113,9 +113,9 @@ if(document.querySelector('.testimonial_carousel') !== null){
           }
         },
         {
-          breakpoint: 600,
+          breakpoint: 900,
           settings: {
-            slidesToShow: 1,
+            slidesToShow: 2,
             slidesToScroll: 1
           }
         },

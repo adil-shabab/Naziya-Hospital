@@ -44,6 +44,32 @@ body{
 .navbar .nav-link.active{
     color: var(--secondary-color);
 }
+.navbar_menu{
+    width: 40px;
+}
+.navbar-toggler.collapsed{
+    border: none;
+    outline: none;
+}
+.navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+
+
+@media screen and (max-width: 900px) {
+    .navbar .navbar-nav{
+        padding-top: 25px;
+        border-top: 1px solid gray;
+        margin-top: 25px;
+    }
+    .navbar-toggler{
+        border: none;
+        outline: none;
+    }
+}
+
 /* navbar css end */
 
 
@@ -115,6 +141,7 @@ body{
     margin-top: 25px;
     align-items: center;
     display: flex;
+    margin-bottom: 30px;
 }
 .hero_section .left_box .first_btn{
     padding: 14px 19px;
@@ -144,40 +171,51 @@ body{
 
 
 
+
+
 /* hero section media query  */
-.hero_section::before{
-    width: 100px;
-    height: 100px;
+@media screen and (max-width: 900px){
+    .hero_section::before{
+        width: 100px;
+        height: 100px;
+    }
+    .hero_section::after{
+        width: 150px;
+        height: 150px;
+    }
+    .hero_section .left_box .lottie{
+        display: none;
+    }
+    .hero_section .left_box .heading{
+        font-size: 38px;
+        margin-top: 30px;
+    }
+    .hero_section .left_box .heading::after{
+        width: 35px;
+        height: 35px;
+        position: absolute;
+        margin-top: 7px;
+        margin-left: 10px;
+    }
+    .hero_section .left_box .description{
+        font-size: 16px;
+        margin-top: 15px;
+        width: 95%;
+    }
+    .hero_section .left_box .first_btn{
+        padding: 16px 25px;
+        border-radius: 2px;
+    }
+    .hero_section .left_box .second_btn{
+        display: none;
+    }
 }
-.hero_section::after{
-    width: 150px;
-    height: 150px;
-}
-.hero_section .left_box .lottie{
-    display: none;
-}
-.hero_section .left_box .heading{
-    font-size: 38px;
-    margin-top: 30px;
-}
-.hero_section .left_box .heading::after{
-    width: 35px;
-    height: 35px;
-    position: absolute;
-    margin-top: 7px;
-    margin-left: 10px;
-}
-.hero_section .left_box .description{
-    font-size: 16px;
-    margin-top: 15px;
-    width: 95%;
-}
-.hero_section .left_box .first_btn{
-    padding: 16px 25px;
-    border-radius: 2px;
-}
-.hero_section .left_box .second_btn{
-    display: none;
+@media only screen and (max-width: 900px) and (min-width: 500px)  {
+    .hero_section .right_box_parent{
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
 }
 /* hero section css end  */
 
@@ -262,15 +300,17 @@ body{
 
 
 /* about section media query  */
-.about_section .left_box .head_txt{
-    font-size: 30px;
-    font-weight: bold;
-    margin-bottom: 15px;
-    margin-top: 8px;
-}
-.about_section .left_box .head_txt span{
-    font-size: 32px;
-    text-transform: capitalize;
+@media screen and (max-width: 900px) {
+    .about_section .left_box .head_txt{
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 15px;
+        margin-top: 8px;
+    }
+    .about_section .left_box .head_txt span{
+        font-size: 32px;
+        text-transform: capitalize;
+    }
 }
 /* home page about section css start  */
 
@@ -373,8 +413,10 @@ body{
 
 
 /* department section media query */
-.department__section .description{
-    width: 95%;
+@media screen and (max-width: 900px) {
+    .department__section .description{
+        width: 95%;
+    }
 }
 /* department section css end */
 
@@ -429,15 +471,17 @@ body{
 
 
 /* counter section media query  */
-.counter_section .heading{
-    font-size: 32px;
-    width: 100%;
-}
-.counter_section .row{
-    padding: 0px 0px;
-}
-.counter_section .row .box{
-    margin-bottom: 15px;
+@media screen and (max-width: 900px) {
+    .counter_section .heading{
+        font-size: 32px;
+        width: 100%;
+    }
+    .counter_section .row{
+        padding: 0px 0px;
+    }
+    .counter_section .row .box{
+        margin-bottom: 15px;
+    }
 }
 /* counter section css end  */
 
@@ -495,8 +539,10 @@ body{
 
 
 /* doctors section media query  */
-.doctors_section p.description{
-    width: 100%;
+@media screen and (max-width: 900px) {
+    .doctors_section p.description{
+        width: 100%;
+    }
 }
 /* doctors section css end  */
 
@@ -593,23 +639,25 @@ body{
 
 
 /* checkup section media query  */
-.checkup_section::after{
-    width: 100px;
-    height: 100px;
-}
-.checkup_section::before{
-    width: 150px;
-    height: 150px;
-}
-.checkup_section .span{
-    padding: 10px 15px;
-}
-.checkup_section .heading{
-    font-size: 35px;
-    margin-top: 25px;
-    margin-bottom: 30px;
-    font-weight: bold;
-    width: 100%;
+@media screen and (max-width: 900px) {
+    .checkup_section::after{
+        width: 100px;
+        height: 100px;
+    }
+    .checkup_section::before{
+        width: 150px;
+        height: 150px;
+    }
+    .checkup_section .span{
+        padding: 10px 15px;
+    }
+    .checkup_section .heading{
+        font-size: 35px;
+        margin-top: 25px;
+        margin-bottom: 30px;
+        font-weight: bold;
+        width: 100%;
+    }
 }
 /* checkup section css end  */
 
@@ -681,15 +729,17 @@ body{
 
 
 /* news letter media query  */
-.news_letter{
-    background: #14457b;
-}
-.news_letter .heading{
-    font-size: 30px;
-}
-.news_letter p{
-    width: 80%;
-    margin: 0px auto 35px;
+@media screen and (max-width: 900px) {
+    .news_letter{
+        background: #14457b;
+    }
+    .news_letter .heading{
+        font-size: 30px;
+    }
+    .news_letter p{
+        width: 80%;
+        margin: 0px auto 35px;
+    }
 }
 /* news letter section css end */
 
@@ -816,12 +866,14 @@ body{
 
 
 /* footer media query  */
-.footer_section  h5.head_txt{
-    margin-bottom: 25px;
-    margin-top: 35px;
-}
-.footer_section .logo_section .icons{
-    margin-bottom: 25px;
+@media screen and (max-width: 900px) {
+    .footer_section  h5.head_txt{
+        margin-bottom: 25px;
+        margin-top: 35px;
+    }
+    .footer_section .logo_section .icons{
+        margin-bottom: 25px;
+    }
 }
 /* footer section css ends */
 
@@ -1214,60 +1266,61 @@ body{
 
 
 /* about page media query  */
-
-/* mission and vision section */
-.mission_vision .box{
-    margin-bottom: 20px;
-}
-
-/* subhead section  */
-.about_subhead .heading{
-    font-size: 32px;
-    width: 100%;
-    line-height: 40px;
-    margin-bottom: 15px;
-}
-
-/* counter section  */
-.about_page .counter__section .row{
-    padding: 20px 0px 0px;
-}
-.about_page .counter__section .box{
-    border-radius: 8px;
-    margin-bottom: 15px;
-}
-
-/* banner box section  */
-.banner__box .box{
-    flex-direction: column;
-    padding: 30px 20px;
-    border-radius: 10px;
-    margin-bottom: 15px;
-}
-
-/* testimonial section  */
-.testimonial_section{
-    margin-top: 80px;
-}
-.testimonial_section::before{
-    width: 75px;
-    height: 75px;
-}
-.testimonial_section::after{
-    width: 125px;
-    height: 125px;
-}
-.testimonial_section .heading{
-    font-size: 32px;
-}
-.testimonial_section .testimonial_carousel{
-    margin-top: 100px;
-}
-.testimonial_section .description{
-    width: 100%;
-}
-.testimonial_section .box .quote{
-    width: 60px;
+@media screen and (max-width: 900px) {
+    /* mission and vision section */
+    .mission_vision .box{
+        margin-bottom: 20px;
+    }
+    
+    /* subhead section  */
+    .about_subhead .heading{
+        font-size: 32px;
+        width: 100%;
+        line-height: 40px;
+        margin-bottom: 15px;
+    }
+    
+    /* counter section  */
+    .about_page .counter__section .row{
+        padding: 20px 0px 0px;
+    }
+    .about_page .counter__section .box{
+        border-radius: 8px;
+        margin-bottom: 15px;
+    }
+    
+    /* banner box section  */
+    .banner__box .box{
+        flex-direction: column;
+        padding: 30px 20px;
+        border-radius: 10px;
+        margin-bottom: 15px;
+    }
+    
+    /* testimonial section  */
+    .testimonial_section{
+        margin-top: 80px;
+    }
+    .testimonial_section::before{
+        width: 75px;
+        height: 75px;
+    }
+    .testimonial_section::after{
+        width: 125px;
+        height: 125px;
+    }
+    .testimonial_section .heading{
+        font-size: 32px;
+    }
+    .testimonial_section .testimonial_carousel{
+        margin-top: 100px;
+    }
+    .testimonial_section .description{
+        width: 100%;
+    }
+    .testimonial_section .box .quote{
+        width: 60px;
+    }
 }
 
 
@@ -1394,11 +1447,13 @@ body{
 
 
 /* service page media query  */
-.service__section .heading{
-    font-size: 35px;
-}
-.service__section .description{
-    width: 100%;
+@media screen and (max-width: 900px) {
+    .service__section .heading{
+        font-size: 35px;
+    }
+    .service__section .description{
+        width: 100%;
+    }
 }
 /* service page css end  */
 
@@ -1517,11 +1572,13 @@ body{
 
 
 /* doctors media query  */
-.doctors__section .heading{
-    font-size: 35px;
-}
-.doctors__section .description{
-    width: 100%;
+@media screen and (max-width: 900px) {
+    .doctors__section .heading{
+        font-size: 35px;
+    }
+    .doctors__section .description{
+        width: 100%;
+    }
 }
 /* doctors page css end */
 
@@ -1700,28 +1757,31 @@ body{
 
 
 /* contact page media query  */
-.contact__section{
-    margin-top: 80px;
-    margin-bottom: 50px;
-}
-.contact__section .heading{
-    font-size: 35px;
-    margin-bottom: 20px;
-}
-.contact__section form{
-    margin-top: 25px;
-}
-.contact_box{
-    margin-bottom: 30px;
-}
-.contact_box .box{
-    margin-bottom: 10px;
-    justify-content: unset;
-}
-.contact__section .left_box iframe{
-    margin-top: 50px;
-    width: 100%;
-    height: 350px;
+@media screen and (max-width: 900px) {
+    .contact__section{
+        margin-top: 80px;
+        margin-bottom: 50px;
+    }
+    .contact__section .heading{
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+    .contact__section form{
+        margin-top: 25px;
+    }
+    .contact_box{
+        margin-bottom: 30px;
+    }
+    .contact_box .box{
+        margin-bottom: 10px;
+        padding: 42px 25px;
+        justify-content: unset;
+    }
+    .contact__section .left_box iframe{
+        margin-top: 50px;
+        width: 100%;
+        height: 350px;
+    }
 }
 /* contact page css end */
 
