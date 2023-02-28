@@ -909,6 +909,39 @@ body{
 }
 
 
+
+
+/* mission and vision css */
+.mission_vision{
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+.mission_vision .box{
+    background: #6197bac4;
+    border-radius: 15px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 20px;
+}
+.mission_vision .box img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 24px;
+}
+.mission_vision .box .sm_head{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+/* subhead section css */
 .about_subhead{
     padding: 0px 0px 20px;
     position: relative;
@@ -947,6 +980,9 @@ body{
 
 
 
+
+
+/* counter section css */
 .about_page .counter__section .row{
     padding: 25px 200px 0px;
 }
@@ -981,32 +1017,10 @@ body{
 
 
 
-.mission_vision{
-    margin-top: 50px;
-    margin-bottom: 80px;
-}
-.mission_vision .box{
-    background: #6197bac4;
-    border-radius: 15px;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 25px 20px;
-}
-.mission_vision .box img{
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    margin-right: 24px;
-}
-.mission_vision .box .sm_head{
-    font-size: 25px;
-    font-weight: bold;
-}
 
 
 
+/* banner box section css  */
 .banner__box{
     margin-bottom: 80px;
 }
@@ -1059,6 +1073,8 @@ body{
 
 
 
+
+/* testimonial section css  */
 .testimonial_section{
     margin-top: 120px;
     padding-bottom: 120px;
@@ -1128,7 +1144,6 @@ body{
     font-weight: 900;
     background: #0a3e63;
     font-family: 'Font Awesome 6 Free';
-
 }
 .testimonial_section .heading{
     font-size: 35px;
@@ -1192,6 +1207,70 @@ body{
 .testimonial_section .box .review{
     margin-bottom: 0px;
 }
+
+
+
+
+
+
+/* about page media query  */
+
+/* mission and vision section */
+.mission_vision .box{
+    margin-bottom: 20px;
+}
+
+/* subhead section  */
+.about_subhead .heading{
+    font-size: 32px;
+    width: 100%;
+    line-height: 40px;
+    margin-bottom: 15px;
+}
+
+/* counter section  */
+.about_page .counter__section .row{
+    padding: 20px 0px 0px;
+}
+.about_page .counter__section .box{
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* banner box section  */
+.banner__box .box{
+    flex-direction: column;
+    padding: 30px 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* testimonial section  */
+.testimonial_section{
+    margin-top: 80px;
+}
+.testimonial_section::before{
+    width: 75px;
+    height: 75px;
+}
+.testimonial_section::after{
+    width: 125px;
+    height: 125px;
+}
+.testimonial_section .heading{
+    font-size: 32px;
+}
+.testimonial_section .testimonial_carousel{
+    margin-top: 100px;
+}
+.testimonial_section .description{
+    width: 100%;
+}
+.testimonial_section .box .quote{
+    width: 60px;
+}
+
+
 /* ================================================== About Page css ends =============================================================== */
 
 
@@ -1199,113 +1278,6 @@ body{
 
 
 
-
-
-
-
-
-
-
-
-
-
-/* doctors page css start  */
-.doctors_banner{
-    padding: 120px 0px;
-    background: url('../img/doctors/bg.jpg');
-    background-position: center;
-    background-size: cover;
-    position: relative;
-}
-.doctors_banner::after{
-    content: '';
-    width: 100%;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    height: 100%;
-    background-color: #1567a38a;
-    z-index: 1;
-}
-.doctors_banner .head_txt{
-    font-size: 40px;
-    font-weight: bold;
-    color: white;
-    position: relative;
-    z-index: 2;
-}
-.doctors_banner .breadcramb{
-    font-size: 20px;
-    position: relative;
-    z-index: 2;
-    color: white;
-}
-.doctors_banner .breadcramb a{
-    color: white;
-    font-size: 20px;
-}
-
-
-
-.doctors__section{
-    margin-top: 80px;
-    margin-bottom: 80px;
-}
-.doctors__section .heading{
-    font-size: 40px;
-    font-weight: bold;
-    text-align: center;
-}
-.doctors__section .description{
-    font-size: 16px;
-    text-align: center;
-    margin: auto;
-    width: 50%;
-}
-.doctors__section .row{
-    margin-top: 15px;
-}
-.doctors__section .box{
-    background: #d2dee36e;
-    border-radius: 10px;
-    margin-top: 25px;
-}
-.doctors__section .box .img_box {
-    height: 350px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-.doctors__section .box .img_box img{
-    object-fit: cover;
-    height: 100%;
-}
-.doctors__section .box .inner_box{
-    background: #ffffff4d;
-    text-align: center;
-    padding: 15px 0px 20px;
-}
-.doctors__section .box .inner_box h5.name{
-    margin-bottom: 0px;
-    font-size: 22px;
-    font-weight: bold;
-    color: #14457b;
-}
-.doctors__section .box .inner_box p{
-    margin-bottom: 8px !important;
-}
-.doctors__section .box .inner_box a{
-    text-decoration: none;
-    color: black;
-    position: relative;
-    font-size: 16px;
-    padding-bottom: 8px;
-    font-weight: bold;
-    border-bottom: 1px solid rgb(178, 178, 178);
-}
-
-/* doctors page css end */
 
 
 
@@ -1418,7 +1390,143 @@ body{
 .service__section .row .box a:hover::after{
     right: -50px;
 }
+
+
+
+/* service page media query  */
+.service__section .heading{
+    font-size: 35px;
+}
+.service__section .description{
+    width: 100%;
+}
 /* service page css end  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* doctors page css start  */
+.doctors_banner{
+    padding: 120px 0px;
+    background: url('../img/doctors/bg.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.doctors_banner::after{
+    content: '';
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    background-color: #1567a38a;
+    z-index: 1;
+}
+.doctors_banner .head_txt{
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    position: relative;
+    z-index: 2;
+}
+.doctors_banner .breadcramb{
+    font-size: 20px;
+    position: relative;
+    z-index: 2;
+    color: white;
+}
+.doctors_banner .breadcramb a{
+    color: white;
+    font-size: 20px;
+}
+
+
+
+.doctors__section{
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.doctors__section .heading{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+.doctors__section .description{
+    font-size: 16px;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+}
+.doctors__section .row{
+    margin-top: 15px;
+}
+.doctors__section .box{
+    background: #d2dee36e;
+    border-radius: 10px;
+    margin-top: 25px;
+}
+.doctors__section .box .img_box {
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.doctors__section .box .img_box img{
+    object-fit: cover;
+    height: 100%;
+}
+.doctors__section .box .inner_box{
+    background: #ffffff4d;
+    text-align: center;
+    padding: 15px 0px 20px;
+}
+.doctors__section .box .inner_box h5.name{
+    margin-bottom: 0px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #14457b;
+}
+.doctors__section .box .inner_box p{
+    margin-bottom: 8px !important;
+}
+.doctors__section .box .inner_box a{
+    text-decoration: none;
+    color: black;
+    position: relative;
+    font-size: 16px;
+    padding-bottom: 8px;
+    font-weight: bold;
+    border-bottom: 1px solid rgb(178, 178, 178);
+}
+
+
+
+
+/* doctors media query  */
+.doctors__section .heading{
+    font-size: 35px;
+}
+.doctors__section .description{
+    width: 100%;
+}
+/* doctors page css end */
+
+
+
 
 
 
