@@ -1695,6 +1695,34 @@ body{
 .contact_box .box p{
     margin-bottom: 0px;
 }
+
+
+
+
+/* contact page media query  */
+.contact__section{
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+.contact__section .heading{
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+.contact__section form{
+    margin-top: 25px;
+}
+.contact_box{
+    margin-bottom: 30px;
+}
+.contact_box .box{
+    margin-bottom: 10px;
+    justify-content: unset;
+}
+.contact__section .left_box iframe{
+    margin-top: 50px;
+    width: 100%;
+    height: 350px;
+}
 /* contact page css end */
 
 
