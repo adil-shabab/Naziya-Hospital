@@ -26,6 +26,8 @@
 <body>
 
     
+
+  
   <header>
     <!-- place navbar here -->
     <nav class="sm-shadow navbar navbar-expand-lg navbar-light">
@@ -37,22 +39,25 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              <a class="nav-link home_nav" aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="about.html">About</a>
+              <a class="nav-link about_nav" aria-current="page" href="about.html">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="services.html">Services</a>
+              <a class="nav-link services_nav" aria-current="page" href="services.html">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="doctors.html">Doctors</a>
+              <a class="nav-link doctors_nav" aria-current="page" href="doctors.html">Doctors</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="blogs.html">Blogs</a>
+              <a class="nav-link blogs_nav" aria-current="page" href="blogs.html">Blogs</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="contact.html">Contact</a>
+              <a class="nav-link contact_nav" aria-current="page" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item nav-button-appoinment">
+              <a class="nav-button-link" aria-current="page" href="contact.html">Appoinment</a>
             </li>
           </ul>
         </div>
@@ -290,7 +295,7 @@
         <div class="row">
 
           <div class="col-md-6 d-flex justify-content-center align-items-center">
-            <img src="assets/img/about/about-img-2.png" alt="" class="img-fluid">
+            <img src="assets/img/about/about-img-4.png" alt="" class="img-fluid">
           </div>
           <div class="col-md-6">
             <span class="span">Health Equity</span>
@@ -440,6 +445,12 @@
 
   <!-- custom js -->
   <script src="assets/js/script.js"></script>
+
+
+  <!-- navbar -->
+  <script>
+    document.querySelector('.home_nav').classList.add('active')
+  </script>
 
 
 </body>

@@ -56,6 +56,38 @@ body{
     box-shadow: none;
     border: none;
 }
+.nav-button-appoinment
+{
+    display: flex;
+    align-items: center;
+    
+}
+/* .nav-button-link
+{
+    color:White;
+    background: #202d57;
+    border-radius: 3px;
+    padding: 10px 15px;
+    transition:.3s ease;
+}
+.nav-button-link:hover
+{
+    background: #121933;
+    color:White;
+} */
+.nav-button-link
+{
+    color:White;
+    background: #202d57;
+    border-radius: 3px;
+    padding: 10px 15px;
+    transition:.3s ease;
+}
+.nav-button-link:hover
+{
+    background: #121933;
+    color:White;
+}
 
 
 @media screen and (max-width: 900px) {
