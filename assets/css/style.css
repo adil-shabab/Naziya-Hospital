@@ -230,6 +230,12 @@ body{
 }
 .about_section .left_box{
     position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.about_section .left_box *{
+    width: fit-content;
 }
 .about_section .left_box .scrubble{
     position: absolute;
