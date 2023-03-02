@@ -126,7 +126,10 @@ body{
     border-bottom: 1px solid #d6d6d66b;
     overflow: hidden;
 
-    min-height: 90vh;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
 .hero_section::before{
     content: '';
