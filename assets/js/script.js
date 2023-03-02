@@ -7,6 +7,8 @@ $(document).ready(function(){
 
 
 
+AOS.init();
+
 
 
 // department carousel 
