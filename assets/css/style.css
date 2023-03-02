@@ -340,13 +340,13 @@ body{
 /* about section media query  */
 @media screen and (max-width: 900px) {
     .about_section .left_box .head_txt{
-        font-size: 30px;
+        font-size: 26px;
         font-weight: bold;
-        margin-bottom: 15px;
+        margin-bottom: 12px;
         margin-top: 8px;
     }
     .about_section .left_box .head_txt span{
-        font-size: 32px;
+        font-size: 26px;
         text-transform: capitalize;
     }
 }
@@ -614,6 +614,9 @@ body{
     right: 0px;
     border-top-left-radius: 100%;
 }
+.checkup_section .checkup__img{
+    width: 75%;
+}
 .checkup_section .span{
     background: #D3E9FB;
     padding: 7px 12px;
@@ -695,6 +698,14 @@ body{
         margin-bottom: 30px;
         font-weight: bold;
         width: 100%;
+    }
+    .checkup_section .checkup__img{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 500px) {
+    .checkup_section .checkup__img{
+        width: 95%;
     }
 }
 /* checkup section css end  */
@@ -962,6 +973,9 @@ body{
 .about_page .about_content{
     margin-top: 80px;
     margin-bottom: 80px;
+}
+.about_page .about_content .about____img{
+    width: 75%;
 }
 .about_page .about_content span{
     font-size: 18px;
@@ -1358,6 +1372,11 @@ body{
     }
     .testimonial_section .box .quote{
         width: 60px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .about_page .about_content .about____img{
+        width: 95%;
     }
 }
 
