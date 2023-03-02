@@ -131,3 +131,31 @@ if(document.querySelector('.testimonial_carousel') !== null){
       ]
   });
 }
+
+
+
+
+
+// Check if the user is scrolling up or down
+let previousScrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+let isScrollingDown = true;
+
+window.addEventListener('scroll', () => {
+  const currentScrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+
+
+  if(currentScrollPosition > 400){
+    console.log(currentScrollPosition)
+    if (currentScrollPosition > previousScrollPosition && isScrollingDown) {
+      document.querySelector('.navbar').classList.remove('fix')
+      isScrollingDown = false;
+    } else if (currentScrollPosition < previousScrollPosition && !isScrollingDown) {
+      document.querySelector('.navbar').classList.add('fix')
+      isScrollingDown = true;
+    }
+  }else{
+    document.querySelector('.navbar').classList.remove('fix')
+  }
+    
+  previousScrollPosition = currentScrollPosition;
+});

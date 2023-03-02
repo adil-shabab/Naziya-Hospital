@@ -31,7 +31,17 @@ body{
 /* navbar css starts */
 .navbar{
     padding: 25px 0px;
+    transition: 0.8s all;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+.navbar.fix{
+    position: fixed;
+    top: 0px;
+    transition: 0.8s;
+    left: 0px;
+    z-index: 11;
+    width: 100%;
+    background: white;
 }
 .navbar .navbar-brand img{
     width: 200px;
@@ -42,7 +52,7 @@ body{
     color: var(--primar-color);
 }
 .navbar .nav-link.active{
-    color: var(--secondary-color);
+    color: #3c95d4;
 }
 .navbar_menu{
     width: 40px;
