@@ -125,6 +125,8 @@ body{
     position: relative;
     border-bottom: 1px solid #d6d6d66b;
     overflow: hidden;
+
+    min-height: 90vh;
 }
 .hero_section::before{
     content: '';
