@@ -838,6 +838,9 @@ body{
 .footer_section .logo_section .icons{
     margin-top: 25px;
 }
+.footer_section .logo_section .icons a{
+    color: white;
+}
 .footer_section .logo_section .icons i{
     font-size: 20px;
     background: rgba(255, 255, 255, 0.079);
