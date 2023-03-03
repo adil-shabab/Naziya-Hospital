@@ -94,7 +94,7 @@ if(document.querySelector('.doctor_carousel') !== null){
 
 
 
-// home page doctor carousel 
+// about page testimonial carousel 
 if(document.querySelector('.testimonial_carousel') !== null){
   $('.testimonial_carousel').slick({
     dots: true,
