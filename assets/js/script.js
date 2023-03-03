@@ -7,7 +7,20 @@ $(document).ready(function(){
 
 
 
+// aos 
 AOS.init();
+
+
+
+// counter 
+if(document.querySelector('.counter') !== null){
+  $('.counter').countUp(
+    {
+    delay: 5,
+    time: 1500
+    }
+  );
+}
 
 
 
